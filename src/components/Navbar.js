@@ -17,10 +17,10 @@ export const Navbar = () => {
   return (
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="./">Home</Link>
       </li>
       <li>
-        <Link to="/?page=about">About</Link>
+        <Link to="./?page=about">About</Link>
       </li>
       <li>
         <button onClick={ handleLogout }>
