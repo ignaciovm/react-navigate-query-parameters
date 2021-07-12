@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useReducer } from 'react'
+import { RouterApp } from './router/RouterApp'
+import { BrowserRouter } from 'react-router-dom'
+import { authReducer } from './auth/authReducer';
+import { AuthContext } from './auth/AuthContext';
 
-function App() {
+export const App = () => {
+
+  // const init = { logged: false }
+
+  const [auth, dispatch] = useReducer(authReducer, { logged: false })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AuthContext.Provider value={{ auth, dispatch }}>
+      <BrowserRouter>
+        <RouterApp />
+      </BrowserRouter>
+    </AuthContext.Provider>
+  )
 }
-
-export default App;
