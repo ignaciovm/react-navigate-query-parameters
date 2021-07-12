@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/style.css"],"names":[],"mappings":"AAAA,GACE,oBAAqB,CACrB,QAAS,CACT,SAAU,CACV,eACF,CAEA,GACE,UAAW,CACX,YACF","file":"main.959893e5.chunk.css","sourcesContent":["ul {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n  overflow: hidden;\r\n}\r\n\r\nli {\r\n  float: left;\r\n  padding: 16px;\r\n}"]}
