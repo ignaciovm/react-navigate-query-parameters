@@ -1,6 +1,7 @@
 {
   "name": "react-nav-query-params",
   "version": "0.1.0",
+  "homepage": "./react-navigate-query-parameters/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
